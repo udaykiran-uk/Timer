@@ -8,9 +8,7 @@ const totalSeconds = 60;
 let playing = false;
 let currentSeconds = totalSeconds;
 timerEl.innerText = formatTime(totalSeconds);
-
 const timerInterval = setInterval(run, 1000);
-
 playBtn.addEventListener('click', () => {
   playing = !playing;
   playBtn.classList.toggle('play');
@@ -29,7 +27,6 @@ function run() {
       clearInterval(timerInterval);
       resetAll();
     }
-
     timerEl.innerText = formatTime(currentSeconds);
     root.style.setProperty('--degrees', calcDeg());
   }
