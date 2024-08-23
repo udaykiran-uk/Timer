@@ -1,7 +1,6 @@
 :root {
   --degrees: 0deg;
 }
-
 .bg-conic {
   background: conic-gradient(
     transparent 0deg,
@@ -10,7 +9,6 @@
     white 360deg
   );
 }
-
 .hand {
   transform-origin: bottom center;
   transform: rotate(var(--degrees));
